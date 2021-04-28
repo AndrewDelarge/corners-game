@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1df4fcbe664c3983c2e040427ff19d, type: 3}
   m_Name: CornersNoJump
   m_EditorClassIdentifier: 
-  title: 'Corners : No Jump'
+  title: 'Corners: No Jump All Moves'
   discription: 'No Jump Allowed
 
 '
