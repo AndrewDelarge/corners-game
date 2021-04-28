@@ -67,45 +67,6 @@ namespace Gameplay.Rules
             return path.Count > 0;
         }
         
-        
-        protected bool IsPathCorrect(List<Vector2Int> path)
-        {
-            var movesCount = 0;
-            var lastIndexWithFig = false;
-            
-            if (path.Count > 1 & path.Count % 2 != 0)
-                return false;
-            
-            for (int i = 0; i < path.Count; i++)
-            {
-                movesCount++;
-                
-                var index = BoardPathfinder.GetBoardIndex(path[i]);
-
-                if (lastIndexWithFig & index.Figure == null)
-                {
-                    lastIndexWithFig = false;
-                    movesCount = 0;
-                    continue;
-                }
-                
-                if (movesCount == 1 & index.Figure == null)
-                    continue;
-
-                if (movesCount > 1 & lastIndexWithFig == false)
-                    return false;
-
-                if (movesCount == 1 & index.Figure != null)
-                {
-                    lastIndexWithFig = true;
-                    continue;
-                }
-
-                return false;
-            }
-            
-            return true;
-        }
 
     }
 }

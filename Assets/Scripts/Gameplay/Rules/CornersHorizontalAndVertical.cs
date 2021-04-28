@@ -24,18 +24,5 @@ namespace Gameplay.Rules
                 new Vector2Int(0, -1),
             };
         }
-
-        public bool IsMoveAllowedTmp(Move move)
-        {
-            var moveLength = move.GetMoveLength();
-            
-            if (Mathf.Abs(moveLength.x) > 0 & Mathf.Abs(moveLength.y) > 0)
-                return false;
-            
-            // TODO rework to "find path"
-            var path = BoardPathfinder.GetPath(move);
-
-            return IsPathCorrect(path);
-        }
     }
 }

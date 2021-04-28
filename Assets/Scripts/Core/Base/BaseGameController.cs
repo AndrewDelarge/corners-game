@@ -11,9 +11,7 @@ namespace Core.Base
         public abstract void EndGame();
         public abstract void InterruptGame();
         public abstract void SetData(DataLoaderResult config);
-        
         public Action onGameStart { get; set; }
-        
         public Action onGameEnd { get; set; }
         public Action<BaseGameResult> onGameOver { get; set; }
         public abstract void SetRule(BaseRule rule);

@@ -8,7 +8,6 @@ namespace UI.Screen.MainMenu.Elements
 {
     public class UIPlayerEditController : MonoBehaviour
     {
-
         [SerializeField] private UIPlayerEdit playerEditPrefab;
         [SerializeField] private Transform playerEditHolder;
         

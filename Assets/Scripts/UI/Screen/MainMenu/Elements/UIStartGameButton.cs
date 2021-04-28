@@ -9,10 +9,9 @@ namespace UI.Screen.MainMenu.Elements
     {
         [SerializeField] private Button button;
         [SerializeField] private Button infoButton;
-        
         [SerializeField] private Text text;
+        
         private GameRuleData gameRuleData;
-
         public GameRuleData GameRuleData => gameRuleData;
 
         public Action<UIStartGameButton> OnClick;

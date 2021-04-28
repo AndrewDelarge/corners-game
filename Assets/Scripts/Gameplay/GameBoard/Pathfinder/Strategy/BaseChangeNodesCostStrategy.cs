@@ -6,12 +6,4 @@ namespace Gameplay.GameBoard.Pathfinder.Strategy
     {
         public abstract void ChangeNodesCost(PathNode currentNode, PathNode neighbor);
     }
-
-    class FreeCost : BaseChangeNodesCostStrategy
-    {
-        public override void ChangeNodesCost(PathNode currentNode, PathNode neighbor)
-        {
-            
-        }
-    }
 }

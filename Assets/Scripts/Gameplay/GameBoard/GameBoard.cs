@@ -10,17 +10,6 @@ using Random = UnityEngine.Random;
 
 namespace Gameplay.GameBoard
 {
-    public class IndexOnBoard
-    {
-        public BoardIndex index { get; }
-        public Vector2Int pos { get; }
-
-        public IndexOnBoard(BoardIndex index, Vector2Int pos)
-        {
-            this.index = index;
-            this.pos = pos;
-        }
-    }
     public class GameBoard : BaseGameBoard
     {
         [SerializeField] private int wight = 7;
@@ -122,14 +111,8 @@ namespace Gameplay.GameBoard
         {
             return indicesOnBoard.Find(elem => elem.pos == new Vector2Int(x, y)).index;
         }
-
-        public override bool HasIndex(int x, int y)
-        {
-            var index = indicesOnBoard.Find(elem => elem.pos == new Vector2Int(x, y));
-            
-            return index != null;
-        }
-
+        
+        
         public override Vector2Int GetSize()
         {
             return new Vector2Int(wight, higth);

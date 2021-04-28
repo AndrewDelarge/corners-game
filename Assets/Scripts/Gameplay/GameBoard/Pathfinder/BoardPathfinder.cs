@@ -91,22 +91,6 @@ namespace Gameplay.GameBoard.Pathfinder
                 if (newNode == null) continue;
                 if (node.previous == newNode) continue;
                 
-                
-                
-                //Also Worked with this
-//                
-//                if (HasFigureOnBoardPos(newNode.pos))
-//                {
-//                    var afterFigureNode = GetNode(newNode.pos + possiblePath);
-//                    
-//                    if (afterFigureNode == null) continue;
-//                    if (HasFigureOnBoardPos(afterFigureNode.pos)) continue;
-//
-//                    GetBoardIndex(afterFigureNode.pos).SetColor(Color.cyan);
-//                    afterFigureNode.cost = 0;
-//                    path.Add(afterFigureNode);
-//                }
-                
                 neighborNodes.Add(newNode);
             }
 
@@ -179,24 +163,5 @@ namespace Gameplay.GameBoard.Pathfinder
             board.GetIndex(node.pos.x, node.pos.y).SetColor(Color.green);
         }
         
-        
-
-        
-        public List<Vector2Int> GetPath(Move move)
-        {
-            List<Vector2Int> path = new List<Vector2Int>();
-            var moveLength = move.GetMoveDirection();
-
-            Vector2Int pos = move.OldPosition;
-            
-            while (pos != move.NewPosition)
-            {
-                pos -= moveLength;
-                
-                path.Add(pos);
-            }
-
-            return path;
-        }
     }
 }

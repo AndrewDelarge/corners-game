@@ -18,9 +18,5 @@ namespace UI.Screen.MainMenu
             base.Open();
         }
 
-        public override void Close()
-        {
-            base.Close();
-        }
     }
 }

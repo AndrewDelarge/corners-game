@@ -11,7 +11,5 @@ namespace Core.Data
         }
         
         public static GameSettings GameSettings;
-
-        public static BaseScenes BaseScenes;
     }
 }

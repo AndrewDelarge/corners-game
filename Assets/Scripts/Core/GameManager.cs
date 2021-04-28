@@ -30,7 +30,6 @@ namespace Core
             var result = (CornersGamemodeLoadResult) gameModeloader.Load();
             
             CoreData.GameSettings = new GameSettings(result.gameRuleDatas.ToList());
-            CoreData.BaseScenes = new BaseScenes();
         }
 
         public void LoadMainMenu()
