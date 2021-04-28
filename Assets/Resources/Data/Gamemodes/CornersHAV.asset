@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 'Corners : Horizontal And Vertical'
   discription: Only horizontal and vertical moves allowed
-  rule: 1
+  ruleType: 1

@@ -16,4 +16,4 @@ MonoBehaviour:
   discription: 'No Jump Allowed
 
 '
-  rule: 2
+  ruleType: 2
